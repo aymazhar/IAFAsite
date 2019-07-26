@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Prompt:500&display=swap');
 
 
@@ -90,9 +90,6 @@ h2 {
     margin-left: 7rem;
     margin-bottom: 2rem;
     width: 400px;
-    /* margin-left: 0rem;
-    margin-top: 0rem;
-    margin-right: 0rem; */
 
 }
 
@@ -105,9 +102,12 @@ h2 {
     border-radius: 3px;
     width: 150px; 
     text-align: center;
-    margin-left: 13rem;
-    margin-top: 3rem;
+    margin-left: -9.5rem;
+    margin-top: 0rem;   
 }
+
+
+
 
 .btn:hover{
     background: #61AE5A;
@@ -192,6 +192,7 @@ h2 {
 #logo {
     width: 20%;
     margin-left: 12rem;
+
 }
 
 
@@ -223,14 +224,49 @@ h2 {
 
 
 
+/* Recipes */
+
+.r-container .recipe1{
+    margin-left: 5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 20rem;
+    height: 17rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.r-container .recipe1 h4 {
+    margin-top: -0.75rem;
+}
+
+.r-container .recipe1 img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;    
+}
+
+.recipe1{
+    padding: 20px 20px;
+    background-color: white;
+    border: none;
+}
+
+.r-container .recipe1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
 
 
 
 
 /* SPONSORS */
 #sponsors{
-    background-color: rgb(213,231,205,1); 
-    box-shadow: -0px -8px 5px 5px rgb(213, 231, 205);
+    /* background-color: rgb(213,231,205,1);  */
+    /* box-shadow: -0px -8px 5px 5px rgb(213, 231, 205); */
     padding: 4rem;    
 }
 

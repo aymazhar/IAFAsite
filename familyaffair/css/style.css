@@ -12,7 +12,8 @@
 }
 
 body{
-    font-family: europa-boldregular, sans-serif;
+    /* font-family: europa-boldregular, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -167,9 +168,8 @@ h2 {
 
 /* Main Heading Area */
 #mainhead{
-    background: #333 url('../img/mainheader.jpg') no-repeat center center/cover;
-    height: 100vh;
-    color: black;
+    background: url('../img/mainheader.jpg') no-repeat center center/cover;
+    height: 100vh
 }
 
 #mainhead .mainhead-content{
@@ -205,6 +205,17 @@ h2 {
 
 
 /* About US */
+
+#about{
+    background: url('../img/aboutheader.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+
+#about .container{
+    background-color: rgba(255,255,255,0.3);
+}
+
 
 #teaser {
     margin-top: 3.5rem;
@@ -265,13 +276,11 @@ h2 {
 
 /* SPONSORS */
 #sponsors{
-    /* background-color: rgb(213,231,205,1);  */
-    /* box-shadow: -0px -8px 5px 5px rgb(213, 231, 205); */
     padding: 4rem;    
 }
 
 #sponsors .med-heading{
-    margin-top: -30px;
+    margin-top: 0rem;
     color: #333333;
 }
 
@@ -294,6 +303,11 @@ h2 {
 
 
 
+#sponsors .container .items img .lg4 {
+    width: 25rem;
+}
+
+
 
 
 
@@ -303,7 +317,19 @@ h2 {
 /* Contact */ 
 #contact {
     display: flex;
-   
+    background: url('../img/contactheader.jpg') no-repeat center center/cover;  
+}
+
+
+.bg-primary{
+   display: flex;
+   flex-direction: column;
+   background: none;
+   background-color: rgb(255,255,255,0.3);
+   margin-right: 0;
+   margin-bottom: 0;
+   margin-top: 0;
+
 }
 
 #contact .map, #contact .bg-primary{
@@ -319,6 +345,7 @@ h2 {
 #contact .bg-primary .med-heading {
     margin-top: 2rem;
     font-family: 'Roboto' sans-serif;
+    margin-left: -8rem;
 }
 
 .fas { 
@@ -331,12 +358,8 @@ h2 {
 }
 
 #contact .bg-primary .contactinfo{
-    /* margin:- 1rem; */
-    /* padding: 5rem;
-    line-height: 3.5; */
-    font-size: 1.2rem;  
+   font-size: 1.2rem;  
 }
-
 
 
 .card{
@@ -348,7 +371,7 @@ h2 {
 }
 
 .card:hover{
-    box-shadow: 0 15px 15px 0 rgb(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgb(0,0,0,0.2);
 }
 
 .map{
@@ -358,6 +381,19 @@ h2 {
 ul{
     list-style: none; 
 }
+
+#phone, #email, #address{
+    margin-top: 1.25rem;
+    
+}
+
+
+
+
+
+
+
+
 
 
 

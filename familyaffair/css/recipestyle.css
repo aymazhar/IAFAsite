@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prompt:500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    /* font-family: europa-boldregular, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem, 0;
+}
+
+
+/* Utility Classes */
+
+/* .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.container .item p {
+    float: right;
+    text-align: right;
+} */
+
+
+.text-dark {
+    color: black;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
+    padding-top: 0px;
+    
+}
+
+.text-primary2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color:#F2A12C
+}
+.text-primary3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color:#2AA041
+}
+
+/* h2 {
+    text-align: center;
+    padding: 1.5rem 0;
+} */
+
+/* .l-heading {
+    font-size: 3rem;
+    font-family: 'Prompt', sans-serif;
+    margin-top: -10rem;
+    margin-left: 7rem;
+    line-height: 1.1;
+} */
+
+/* .med-heading {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    color: black;
+}
+
+
+
+.lead{
+    float: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    width: 400px;
+
+} */
+
+/* .btn{
+    display: inline-block;
+    color: white;
+    background: #2AA041;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    width: 150px; 
+    text-align: center;
+    margin-left: -9.5rem;
+    margin-top: 0rem;   
+} */
+
+
+
+
+/* .btn:hover{
+    background: #61AE5A;
+}
+
+.bg-primary {
+    background-color: white;
+    margin: 4rem;
+}
+
+.bg-primary p {
+    padding: 3rem;
+}
+
+ */
+
+
+
+/* NAVBAR */
+.navbar-toggler:hover{
+    border-color:#2AA041;
+}
+
+.navbar-nav {
+    text-align: right;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #2AA041;
+}
+
+
+/* Main Recipe Page */
+
+.container h1 {
+    padding-top: 3rem;
+}
+
+#mbbc {
+    margin-top: 3rem;
+
+}
+
+.recinfo{
+    text-align: center;
+}
+
+.recnum{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.recnuminfo .recnum {
+    color: #565656;
+}
+
+.row {
+    margin-top: 3rem;
+}
+
+.ing-list, .dir-list{
+    padding: 1.5rem;
+}
+
+.ing-list li{
+    line-height: 2rem;
+}
+
+.dir-list li {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+
+.btn-nutri, .btn-demo{
+    border-radius: 2rem;
+    padding: 0.5rem 1.25rem;
+    margin: 0rem 2rem;
+}
+
+.row {
+    padding-top: 2rem;
+}
+
+
+.nutr-info{
+    border: 2px solid lightgrey;
+    height: 8rem;
+    width: 8rem;
+    text-align: center;
+    padding-top: 3rem; 
+    margin: 0 2rem;
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.nutr-info:hover{
+    box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.nutri-circles{
+ 
+    align-items: center;
+    text-align: center;
+}
+
+
+#nutrition .row .nutr-info p {
+    line-height: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+#main-footer {
+    display: flex;
+    padding: 1.1rem 1.1rem;
+}
+
+.socialmedia{
+    margin-right: 2rem; 
+}
+
+.fab {
+    color: #565656;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.fab:hover{
+    color: black;
+}
+
+#main-footer .container {
+    font-style: 'Roboto' sans-serif;
+    font-size: 0.7rem;
+    text-align: left;
+    margin-left: 0px;
+    color: #565656;
+}

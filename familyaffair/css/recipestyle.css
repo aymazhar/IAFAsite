@@ -12,8 +12,12 @@
 }
 
 body{
-    /* font-family: europa-boldregular, sans-serif; */
     font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a;
+}
+
+h1, h2, h4{
+    color: black;
 }
 
 a {
@@ -24,20 +28,6 @@ p {
     margin: 0.75rem, 0;
 }
 
-
-/* Utility Classes */
-
-/* .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 2rem;
-    overflow: hidden;
-}
-
-.container .item p {
-    float: right;
-    text-align: right;
-} */
 
 
 .text-dark {
@@ -59,69 +49,6 @@ p {
     color:#2AA041
 }
 
-/* h2 {
-    text-align: center;
-    padding: 1.5rem 0;
-} */
-
-/* .l-heading {
-    font-size: 3rem;
-    font-family: 'Prompt', sans-serif;
-    margin-top: -10rem;
-    margin-left: 7rem;
-    line-height: 1.1;
-} */
-
-/* .med-heading {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-    color: black;
-}
-
-
-
-.lead{
-    float: center;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-left: 7rem;
-    margin-bottom: 2rem;
-    width: 400px;
-
-} */
-
-/* .btn{
-    display: inline-block;
-    color: white;
-    background: #2AA041;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 3px;
-    width: 150px; 
-    text-align: center;
-    margin-left: -9.5rem;
-    margin-top: 0rem;   
-} */
-
-
-
-
-/* .btn:hover{
-    background: #61AE5A;
-}
-
-.bg-primary {
-    background-color: white;
-    margin: 4rem;
-}
-
-.bg-primary p {
-    padding: 3rem;
-}
-
- */
-
 
 
 /* NAVBAR */
@@ -131,21 +58,25 @@ p {
 
 .navbar-nav {
     text-align: right;
+    color: #4a4a4a;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
     color: #2AA041;
 }
+
 
 
 /* Main Recipe Page */
 
 .container h1 {
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 #mbbc {
     margin-top: 3rem;
+    height: 28rem;
+    width: 28rem;
 
 }
 
@@ -156,6 +87,7 @@ p {
 .recnum{
     font-size: 2rem;
     margin-bottom: 0;
+    color: grey;
 }
 
 .recnuminfo .recnum {
@@ -166,7 +98,12 @@ p {
     margin-top: 3rem;
 }
 
-.ing-list, .dir-list{
+
+
+/* ingredients and directions */
+
+.dir-list{
+    list-style-type: none;
     padding: 1.5rem;
 }
 
@@ -182,7 +119,28 @@ p {
 .btn-nutri, .btn-demo{
     border-radius: 2rem;
     padding: 0.5rem 1.25rem;
-    margin: 0rem 2rem;
+    margin: 2rem 2rem;
+    color: white;
+}
+
+.btn-demo{
+    background: #F25E2E;
+}
+
+.btn-nutri{
+    background: #90a88e;
+}
+
+.btn-demo:hover, .btn-nutri:hover {
+    color: white;
+}
+
+.btn-demo:hover{
+    background:#f03b00;
+}
+
+.btn-nutri:hover{
+    background: #839982;
 }
 
 .row {
@@ -204,10 +162,10 @@ p {
     box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.nutri-circles{
- 
-    align-items: center;
-    text-align: center;
+#nutrition .nutri-circles{
+    justify-content: center;
+    /* align-items: center;
+    text-align: center; */
 }
 
 
@@ -215,49 +173,83 @@ p {
     line-height: 0.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer */
-#main-footer {
-    display: flex;
-    padding: 1.1rem 1.1rem;
+.custom-checkbox{
+    margin: 0.5rem;
 }
 
-.socialmedia{
-    margin-right: 2rem; 
+.ingredients h4{
+    margin-bottom: 2rem;
 }
 
-.fab {
-    color: #565656;
-    padding-left: 1.5rem;
-    font-size: 1.6rem;
+
+.custom-control-input:checked~.custom-control-label::before, .custom-checkbox .custom-control-label::before { 
+    border-radius: 1rem;
 }
 
-.fab:hover{
+
+.custom-control-input:checked~.custom-control-label::before{
+
+background: #90a88e;
+border-color: #90a88e;
+}
+
+.custom-control-label{
+    padding-left: 0.5rem;
+}
+
+#nutrition{
+    text-align: center;
+}
+
+.rec-teaser{
+    opacity: 0.75;
+    object-fit: cover;
+    top: -150px;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    background-color: rgb(0,0, 0,0.7);
+    border-bottom: 100rem solid #f03b00;
+}
+
+
+
+.navbar{
+    opacity: 1;
+    background: white;
+}
+
+.container{
+    margin-top: 200px;
+    background: white;
+    border-radius: 10px;
+    z-index: 30;
+}
+
+
+
+.row .ingredients, .row .directions{
+    background-color: #F9F9F9;
+}
+
+.direc-title{
     color: black;
+    font-weight: bold;
 }
 
-#main-footer .container {
-    font-style: 'Roboto' sans-serif;
-    font-size: 0.7rem;
-    text-align: left;
-    margin-left: 0px;
-    color: #565656;
+
+.row .col-md-12 {
+    text-align: center;
 }
+
+.row .col-md-12 .buttons {
+    align-items: center;
+    justify-content: center;
+}
+
+.ing-dir{
+    margin-top: 3rem;
+}
+
+
+

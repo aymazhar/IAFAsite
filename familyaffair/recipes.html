@@ -47,10 +47,14 @@
          </div>
     </nav>
 
-    <!-- RECIPE -->
+    <div class="rec-teaser embed-responsive embed-responsive-16by9 jumbotron jumbotron-fluid">
+        <video class="embed-responsive-item" autoplay="autoplay" loop="loop" src="/img/fabanner.mp4"></video>
+    </div>
+
+    <!-- Main Header Recipe Info -->
     <div class="container"> 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h1>Much Better Butter Chicken</h1>
                 <p class="font-weight-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti enim quam nihil eum ducimus consectetur? Ex assumenda optio corporis non.</p>
@@ -71,58 +75,122 @@
                         <p class="recnuminfo"> Servings </p>
                     </div>
                 </div>
-                <div class="row">
-                        <a class="btn btn-success btn-nutri" href="#nutrition" role="button">Nutrition</a>
-                        <a class="btn btn-success btn-demo" href="#demo" role="button">Watch Our Demo</a>
+                <div class="row buttons">
+                        <a class="btn btn-nutri" href="#nutrition" role="button">Nutrition</a>
+                        <a class="btn btn-demo" href="#demo" role="button">Watch Our Demo</a>
                 </div>
             </div>
-
-            <div class="col-md-6 order-first order-md-2">
-                <img src="img/mbbc.PNG" class="float-right img-fluid" alt="Responsive image" id="mbbc">
-            </div>         
         </div>   
+    </div>
 
 
 <!-- INGREDIENTS AND DIRECTIONS -->
+    <div class="container ing-dir">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ingredients col-md-6 border-right">
 
-        <div class="row border-top">
-            <div class="ingredients col-md-6 border-right">
-                <h4>Ingredients</h4>
-                <ul class="ing-list">
-                    <li>1 tbs grapeseed oil</li>
-                    <li>1/2 cup chopped red onion</li>
-                    <li>3 tbs chopped fresh garlic</li>
-                    <li>1 tbs chopped fresh ginger</li>
-                    <li>2 tbs tomato paste</li>
-                    <li>1 tbs brown sugar</li>
-                    <li>1 tbs cumin seeds</li>
-                    <li>1 tbs garam masala</li>
-                    <li>1 tsp red chile flakes</li>
-                    <li>1 tsp turmeric</li>
-                    <li>1 tsp salt</li>
-                    <li>2 cups chopped chicken breast</li>
-                    <li>3/4 cup low-fat buttermilk</li>
-                    <li>1 tbs cornstarch</li>
-                    <li>kasuri methi to taste</li>
-                    <li>cooking spray</li>
-                </ul>
+                    <h4>Ingredients</h4>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check1">
+                        <label class="custom-control-label" for="check1">1 tbs <b>grapeseed oil</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check2">
+                        <label class="custom-control-label" for="check2">1/2 cup <b> chopped red onion</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check3">
+                        <label class="custom-control-label" for="check3">3 tbs <b> chopped fresh garlic</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check4">
+                        <label class="custom-control-label" for="check4">1 tbs <b>chopped fresh ginger</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check5">
+                        <label class="custom-control-label" for="check5">2 tbs <b>tomato paste</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check6">
+                        <label class="custom-control-label" for="check6">1 tbs <b> brown sugar </b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check7">
+                        <label class="custom-control-label" for="check7">1 tbs <b>cumin seeds </b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check8">
+                        <label class="custom-control-label" for="check8">1 tbs <b>garam masala</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check9">
+                        <label class="custom-control-label" for="check9">1 tsp <b>red chile flakes</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check10">
+                        <label class="custom-control-label" for="check10">1 tsp <b>turmeric</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check11">
+                        <label class="custom-control-label" for="check11">1 tsp <b>salt</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check12">
+                        <label class="custom-control-label" for="check12">2 cups <b>chopped chicken breast</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check13">
+                        <label class="custom-control-label" for="check13">3/4 cup <b>low-fat buttermilk</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check14">
+                        <label class="custom-control-label" for="check14">1 tbs <b>cornstarch</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check15">
+                        <label class="custom-control-label" for="check15"> <b>kasuri methi</b> to taste</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check16">
+                        <label class="custom-control-label" for="check16"><b>cooking spray</b></label>
+                    </div>
 
+                </div>
+
+                <div class="directions col-md-6">
+                    <h4>Directions</h4>
+                    <ol class="dir-list">
+                        <span class="direc-title">STEP 1</span>
+                        <li>In a medium mixing bowl, add the chopped chicken, grapeseed oil, turmeric, brown sugar, salt and half of the ginger and garlic. Mix together to coat the chicken.</li>
+                        
+                        <span class="direc-title">STEP 2</span>
+                        <li>Add the chicken to a non-stick pan over medium heat. Let the chicken cook for about 6 minutes, or until it is no longer pink in the center. Remove the chicken from the pan and place it to the side.</li>
+                        
+                        <span class="direc-title">STEP 3</span>
+                        <li>Coat the pan in cooking spray, add onions and the rest of the ginger and garlic. Saut‌&#233 for about 4 minutes or until the onions start to turn golden. </li>
+                        
+                        <span class="direc-title">STEP 4</span>
+                        <li>Add the tomato paste, water, chile flakes, cumin seeds, buttermilk, cornstarch and cooked chicken to the pan. Let all the ingredients simmer in the pan for a few minutes or until the sauce thickens. Add in kasuri methi and garam masala to taste. Serve with bulgar wheat.</li>
+                    </ol>
+                </div>
             </div>
-            <div class="directions col-md-6">
-                <h4>Directions</h4>
-                <ol class="dir-list">
-                    <li>In a medium mixing bowl, add the chopped chicken, grapeseed oil, turmeric, brown sugar, salt and half of the ginger and garlic. Mix together to coat the chicken.</li>
-                    <li>Add the chicken to a non-stick pan over medium heat. Let the chicken cook for about 6 minutes, or until it is no longer pink in the center. Remove the chicken from the pan and place it to the side.</li>
-                    <li>Coat the pan in cooking spray, add onions and the rest of the ginger and garlic. Saut‌&#233 for about 4 minutes or until the onions start to turn golden. </li>
-                    <li>Add the tomato paste, water, chile flakes, cumin seeds, buttermilk, cornstarch and cooked chicken to the pan. Let all the ingredients simmer in the pan for a few minutes or until the sauce thickens. Add in kasuri methi and garam masala to taste. Serve with bulgar wheat.</li>
-                </ol>
-            </div>
+        </div>
+    </div>
+
+
+
 
 
 <!-- NUTRITIONAL INFORMATION -->
-
+<div class="container2">
             <div id="nutrition" class="row col-md-12">
                 <h2>Nutrition</h2>
+                <div class="row col-md-12">
+                    <p>
+                        Did you know that traditional butter chicken recipes can have upto 620 calories, 42.9g of protein, 29.9g of fat and 34.9g of carbs? Thats a lot! Check out the nutritional information for our recipe to see why it's much better butter chicken.
+                    </p>
+                </div>
                 <div class="row col-md-12 nutri-circles">    
                     <span class="nutr-info rounded-circle"> 
                         <p>258</p>
@@ -142,16 +210,18 @@
                     </span>
                 </div>
             </div>
+        </div>
 
 
 <!-- COOKING DEMONSTRATION -->
-
+        <div class="container3">
             <div id="demo" class="row demo col-md-12">
                     <h2>How We Do It</h2>
                 </div>
 
         </div>
     </div>
+</div>
 
 
 

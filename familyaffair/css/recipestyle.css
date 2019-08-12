@@ -89,12 +89,18 @@ nav{
     width: 120px;
     border: 1px solid white;
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+    
 }
 
 .nav-link{
     color: grey;
     background: white;
 }
+
+
+
+    
+
 
 
 /* Main Recipe Page */
@@ -388,7 +394,9 @@ nav{
 } 
 
 .s3{
-    background: #E0EDDF;
+    /* background: url(/img/aboutheader2.jpg) no-repeat center center/cover; */
+    background: #1B2C36;
+     /* #E0EDDF; */
     padding: 1rem;
 }
 

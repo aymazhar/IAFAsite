@@ -41,3 +41,16 @@ window.addEventListener('scroll', function() {
         );
       }
     });
+
+
+    // Main header - fade ins 
+
+  $("#mainhead .main-content h2").delay(1000).animate({opacity: 1}, 700);
+
+  $("#mainhead .main-content .row .display-4").delay(1400).animate({opacity: 1}, 700);
+
+  $("#mainhead .main-content .row .display-5").delay(1800).animate({opacity: 1}, 700);
+
+  $("#mainhead .main-content .row p, #mainhead .main-content .buttons").delay(2700).animate({opacity: 1}, 700);
+
+ 

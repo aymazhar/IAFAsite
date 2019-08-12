@@ -16,64 +16,67 @@
 </head>
 <body id="home">
 
-    <!-- NAV BAR -->
-    <nav id="navbar" class="sticky">
-        <h1 class="logo-heading">
-            <span class="text-primary">
-                It's a 
-            </span> 
-            <span class="text-primary2"> Family </span> 
-            <span class="text-primary3"> Affair </span> 
-            
-        </h1>
-        <ul> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#recipe">Recipes</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light sticky">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#mainhead">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-elem my-2 order-0 order-md-1 position-relative">
+            <a class="mx-auto" href="#mainhead">
+                <img id="nav-img" src="/img/logo_header.png" class="rounded-circle navbarcircle">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#recipe">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactpage">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 
-
-
-
-    <!-- MAIN HEADER -->
-    <header id="mainhead">
-        <div class="mainhead-content">
-            <h1 class="l-heading">
-                Your resource for healthy eating
-            </h1>
-            <p class="lead">
-                Small snippet of about us. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, explicabo.
-            </p>
-            <div>
-                <img id="logo" src="./img/logo.jpg" alt="FA logo"> 
-                <a href="#about" class="btn"> Learn More </a>
-
+    <div id="mainhead">
+        <div class="main-content container-fluid">
+            <h2 class="row col-md-auto justify-content-md-center">IT'S A</h2>
+            <div class="row col-md-auto">
+                <h1 class="main-text display-4 ">Family</h1>
+                <h1 class="main-text display-5 "> Affair</h1>
+            </div>
+            <div class="row col-md-auto">
+                <p>HEALTHY EATING, MADE EASY</p>
+            </div>
+            <div class="buttons">
+                <a class="btn btn-lg" href="#about" role="button">Learn more</a>
             </div>
         </div>
-    </header>
+    </div>
 
-
-
-
-    
 
     <!-- SECTION: ABOUT US -->
-    <section id="about" class="bg-light py-1">
-        <div class="container"> 
-            <h2 class="med-heading">
+    <section id="about">
+        <div class="about-content container"> 
+            <h2 class="main-text row col-md-12 justify-content-end">
                 What We Do
             </h2>
 
-            <div class="tea">
-                 <iframe id="teaser" width="560" height="315" src="https://www.youtube.com/embed/Sgo0fFcnc9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="item">
-                 <p> 
-                South Asian Canadians bear a greater burden of diabetes, as they are twice as likely to develop the disease and its complications, and are diagnosed at a significantly younger age. Poor dietary habits are a key modifiable risk factor that puts South Asians at greater risk for obesity related diseases. Founded by the University of British Columbia, It's a Family Affair strives to change what it means to eat healthy. Through our in-school workshops, online recipes and cooking demonstrations, we hope to conduct a family-focused, “hands-on” model for teaching South Asian children and their parents lifelong strategies for eating and cooking healthy.  Make your meals a family affair. 
-                 </p>
+            <div class="about-desc row">
+                <iframe class="col-md-6 justify-content-start" id="teaser" width="560" height="315" src="https://www.youtube.com/embed/Sgo0fFcnc9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="col-md-6 justify-content-end order-first order-md-2">
+                    South Asian Canadians bear a greater burden of diabetes, as they are twice as likely to develop the disease and its complications, and are diagnosed at a significantly younger age. Poor dietary habits are a key modifiable risk factor that puts South Asians at greater risk for obesity related diseases. Founded by the University of British Columbia, It's a Family Affair strives to change what it means to eat healthy. Through our in-school workshops, online recipes and cooking demonstrations, we hope to conduct a family-focused, “hands-on” model for teaching South Asian children and their parents lifelong strategies for eating and cooking healthy.  Make your meals a family affair. 
+                </p>
             </div>
         </div>
     </section>
@@ -81,19 +84,22 @@
 
     <!-- RECIPES -->
     <section id="recipe">
-        <div class="r-container">
-            <h2 class="med-heading">
+        <div class="container">
+            <h2 class="row main-text justify-content-start">
                 Our Recipes
             </h2>
-
-            <div class="recipeCards">
-                <a data-toggle="collapse" data-target="#mbbcRecipe" href="recipes.html">
-                    <div class="recipe1">
-                        <img src="img/mbbc.PNG" alt="Butter Chicken in a Bowl">
-                        <h4 class="recipe-title">Much Better Butter Chicken
-                        </h4>
+            
+            <div class="row col-md-2 flip-card justify-content-md-center">
+                <div class="flip-card-inner">
+                    <a class="card-front" href="recipes.html">
+                        <div class="recipe1">
+                            <img src="img/mbbc_full.PNG" alt="Butter Chicken in a Bowl">
+                        </div>
+                    </a>
+                    <div class="card-back">
+                        <h4 class="recipe-title">Get Started</h4>
                     </div>
-                </a>
+                </div>
             </div>
         </div>     
     </section>
@@ -102,24 +108,22 @@
     <!-- SPONSORS -->
     <section id="sponsors">
         <div class="container">
-            <h2 class="med-heading">
-                    Our Sponsors
-            </h2>
-            <div class="items">
-                <a target="blank_" href="https://www.ubc.ca/">
-                    <img id="lg1" src="./img/ubc.png" alt="Sponsors">
+            <h2 class="row justify-content-md-center med-heading">Our Sponsors</h2>
+            <div class="items row justify-content-md-center">
+                <a class="col-md-3" target="blank_" href="https://www.ubc.ca/">
+                    <img id="lg1" src="./img/logos/ubc-logo-short.png" alt="Sponsors">
                 </a>
 
-                <a target="blank_" href="https://www.sunlife.ca/">
-                    <img id="lg2" src="./img/sunlife.png" alt="Sponsors">
+                <a class="col-md-3" target="blank_" href="https://www.sunlife.ca/">
+                    <img id="lg2" src="./img/logos/sunlife_logo.png" alt="Sponsors">
                 </a>
 
-                <a target="blank_" href="https://www.vchri.ca/">
-                    <img id="lg3" src="./img/vch.png" alt="Sponsors">
+                <a class="col-md-3" target="blank_" href="https://www.vchri.ca/">
+                    <img id="lg3" src="./img/logos/VCHRI-logo.png" alt="Sponsors">
                 </a>
 
-                <a target="blank_" href="http://vghfoundation.ca/">
-                    <img id="lg4" src="./img/vghfound.png" alt="Sponsors">
+                <a class="col-md-3"target="blank_" href="http://vghfoundation.ca/">
+                    <img id="lg4" src="./img/logos/VGH-logo.png" alt="Sponsors">
                 </a>
             </div>
         </div>
@@ -129,53 +133,61 @@
  
 <!-- FIXED CONTACT US RESPONSIVE -->
     <section id="contactpage">
-        <div class="row">
-            <h2 class="med-heading col-md-12">Looking to get in touch?</h2>
+        <div class="contacts">            
+        <div class="container">
+            <h2 class="row col-md-12 justify-content-center">Get in touch</h2>
+            <div class="row content">
+                <div class="col-md-7 justify-content-start">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.8045916870683!2d-123.1282213844129!3d49.26114958021728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673c2236eed27%3A0x6019349f49cc2a13!2sGordon+and+Leslie+Diamond+Health+Care+Centre!5e0!3m2!1sen!2sca!4v1563691108808!5m2!1sen!2sca" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-5 justify-content-end">
+                    <div class="contactinfo">
+                            <div class="row" id="phone">
+                                <i class="fas fa-phone-alt col-md-1"></i>  
+                                <div class="col-md-11">
+                                    604-875-4111
+                                </div>
+                            </div>
+
+                            <div class="row" id="email">
+                                <i class="fas fa-envelope col-md-1"></i>
+                                <div class="col-md-11">
+                                    sunlife.familyaffair@gmail.com
+                                </div>
+                            </div>
+
+                            <div class="row" id="address">
+                                <i class="fas fa-building col-md-1"></i>
+                                <div class="col-md-11">
+                                    Gordon and Leslie Diamond Center <br>
+                                    2775 Laurel Street <br>
+                                    Vancouver, BC V5Z 1M9 <br>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-8">
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.8045916870683!2d-123.1282213844129!3d49.26114958021728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673c2236eed27%3A0x6019349f49cc2a13!2sGordon+and+Leslie+Diamond+Health+Care+Centre!5e0!3m2!1sen!2sca!4v1563691108808!5m2!1sen!2sca" width="600" height="400" frameborder="0" style="border:0" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="col-md-4">
-                <ul class="contactinfo">
-                        <li id="phone">
-                            <i class="fas fa-phone-alt">&nbsp;</i>  
-                            604-875-4111
-                        </li>
-                        <li id="email">
-                            <i class="fas fa-envelope">&nbsp;</i>
-                            sunlife.familyaffair@gmail.com
-                        </li>
-                        <li id="address">
-                            <i class="fas fa-building">&nbsp;</i>
-                            Gordon and Leslie Diamond Center <br>
-                            &nbsp; &nbsp; &nbsp; 2775 Laurel Street <br>
-                            &nbsp; &nbsp; &nbsp; Vancouver, BC V5Z 1M9 <br>
-                        </li>
-                </ul>
-            </div>
         </div>
     </section>
 
 
-
-
     <!-- Footer-->
     <footer id='main-footer'>
-        <div class="container">
-            <p>Copyright &copy; 2019, It's a Family Affair, All Rights Reserved.           
-                <a href="#">Privacy Policy</a>
+        <div class="row">
+            <p class="col-md-11 justify-content-start">Copyright &copy; 2019, It's a Family Affair, All Rights Reserved.           
+                <!-- <a href="#">Privacy Policy</a> -->
             </p>
-        </div>
-        <div class="socialmedia">
-            <a target="_blank" href="https://www.instagram.com/sunlife.familyaffair/">
-                <i class="fab fa-instagram"></i>
-            </a>
-        
-            <a target="_blank" href="https://twitter.com/SunLifeFA?lang=en">
-        <i class="fab fa-twitter"></i></a>
-
+            <div class="socialmedia justify-content-end">
+                <a target="_blank" href="https://www.instagram.com/sunlife.familyaffair/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            
+                <a target="_blank" href="https://twitter.com/SunLifeFA?lang=en">
+            <i class="fab fa-twitter"></i></a>
+    
+            </div>
         </div>
     </footer>
 

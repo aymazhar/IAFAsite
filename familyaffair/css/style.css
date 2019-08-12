@@ -164,13 +164,13 @@ nav{
 /* About US */
 
 #about{
-    background: url('../img/aboutheader.jpg') no-repeat center center/cover;
-    height: 90vh;
+    background: url('../img/aboutheader2.jpg') no-repeat center center/cover;
+    height: 80vh;
 }
 
 #about .about-content h2{
     font-family: 'Pacifico', cursive;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #F2A12C;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -201,83 +201,96 @@ nav{
 
 /* Recipes */
 
+#recipe{
+    margin-top: 1rem;
+    padding-bottom: 7rem;
+    background: url('../img/recipeheader3.png') no-repeat center center/cover;
+    overflow: hidden;
+}
+
 #recipe .container{
-    background: url('../img/recipeheader2.png') no-repeat center center/cover;
-    height: 100vh;
     background-size: 100%;
 }
 
 #recipe .container h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #2AA041;
     padding: 2rem;
-    padding-left: 4rem;
+    margin-bottom: 3rem;
 }
 
-#recipe .container .row .recipe1{
-    margin-left: 5rem;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    width: 22rem;
-    height: 11rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* border-radius: 10px; */
+#recipe .container .flip-card{
+    margin: 0.5rem 0;
+    margin-left: 10rem;
+    padding: 0.5rem 0;
 }
 
-.container .recipe1 h4 {
-    margin-top: -0.75rem;
-}
-
-.container .recipe1 img{
-    width: 100%;
-    margin-bottom: 1.5rem;
-    /* border-radius: 5px;     */
-}
-
-.recipe1{
-    /* padding: 20px 20px; */
+.flip-card {
     background-color: white;
-    /* border: 0.5px solid #1B2C36; */
-}
+    width: 24rem;
+    height: 16rem;
+    perspective: 1000px;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 24rem;
+    height: 16rem;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .flip-card-back {
+    background-color:#1B2C36;
+    color: white;
+    transform: rotateX(180deg);
+    border-radius: 5px;
+    transition: all 2s ease-in-out;
+  }
 
-.container .recipe1:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+  #recipe  a{
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      /* margin-top: 10rem; */
+      font-family: 'Pacifico', cursive;
+  }
 
-#recipe .container .row .recipe1 h4{
-    color: #1B2C36;
-    text-decoration: none;
-}
+  #recipe p{
+      font-family: 'Montserrat', sans-serif;
+      padding-top: 1rem;
+      font-size: 1.5rem;
+      color: #1B2C36;
+  }
 
-#recipe .container .row a {
-    color: #1B2C36;
-    text-decoration: none;
-}
-
-#recipe .container .row a .recipe1 {
-    background-image: #1B2C36;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #recipe a:hover{
+       color: #f03b00; 
+  }
 
 
 
@@ -287,8 +300,6 @@ nav{
     background: #1B2C36;
     overflow: hidden;
 }
-
-
 
 #sponsors .container .med-heading{
     font-family: 'Pacifico', cursive;
@@ -316,11 +327,7 @@ nav{
 #sponsors .items #lg4 {
     width: 130%;
     padding-right: 5rem;
-
 }
-
-
-
 
 
 

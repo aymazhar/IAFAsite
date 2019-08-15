@@ -368,7 +368,7 @@ nav{
     padding-left: 1.5rem;
 }
 
-.fas { 
+.fas, .fab { 
     color: #565656;
     font-size: 1.5rem;
 }
@@ -383,7 +383,7 @@ nav{
     box-shadow: 0 8px 16px 0 rgb(0,0,0,0.2);
 }
 
-#phone, #email, #address{
+#phone, #email, #address, #twitter, #instagram {
     margin-top: 1.25rem;  
     font-size: 1.25rem;
 } 
@@ -411,15 +411,15 @@ nav{
     margin-right: 0rem; 
 }
 
-.fab {
+/* .fab {
     color: white;
     padding-left: 1.5rem;
     font-size: 1.6rem;
-}
+} */
 
-.fab:hover{
+/* .fab:hover{
     color: #f03b00;
-}
+} */
 
 #main-footer .row{
     width: 100%;

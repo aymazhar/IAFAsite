@@ -16,6 +16,7 @@ body{
     color: #4a4a4a;
     padding:0;
     margin:0;
+    text-align: justify;
 }
 
 h1, h2, h4{
@@ -106,7 +107,15 @@ nav{
     background: white;
 }
 
+.navbar .fab {
+    color: #565656;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+}
 
+.navbar .fab:hover{
+    color: #f03b00;
+}
 
     
 
@@ -148,7 +157,7 @@ nav{
 }
 
 .s3 .main .row .row .col-md-6 p{
-    text-align: left;
+    text-align: justify;
     padding: 0 2rem;
     margin: 0 2rem;
 }
@@ -179,6 +188,18 @@ nav{
 .btn-nutri:hover{
     background: #839982;
 }
+
+.btn-nutri:focus {
+    box-shadow: 0 0 0 0.2rem rgba(131,153,130,.5);
+}
+
+.btn-demo:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240,59,0,.5);
+}
+
+
+
+
 
 #time{
     border-left: 1px solid lightgrey;
@@ -327,6 +348,12 @@ nav{
     background: #90a88e;
     border-color: #90a88e;
 }
+
+.custom-control-input:focus~.custom-control-label::before{
+    box-shadow: 0 0 0 0.2rem rgba(131,153,130,.5);
+}
+
+
 
 .custom-control-label{
     padding-left: 0.5rem;

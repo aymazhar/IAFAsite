@@ -24,13 +24,11 @@ p {
     margin: 0.75rem, 0;
 }
 
-
 #mainhead .container{
    margin: 0;
    padding: 0;
    width: 100%;
 }
-
 
 /* NAVBAR */
 nav{
@@ -71,13 +69,30 @@ nav{
     width: 120px;
     border: 1px solid white;
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
-    
 }
 
 .nav-link{
     color: grey;
     background: white;
 }
+
+.navbar .socialmedia a{
+    text-decoration: none;
+}
+
+.navbar .socialmedia .fab {
+    color: #565656;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.navbar .socialmedia .fab:hover{
+    text-decoration: none;
+    color: #f03b00;
+}
+
+
+
 
 
 
@@ -153,6 +168,10 @@ nav{
     color: white;
 }
 
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240,59,0,.5);
+}
+
 #mainhead .main-content h2, .display-4, .display-5, .buttons, #mainhead .main-content .row p{
     opacity: 0;
 }
@@ -194,6 +213,7 @@ nav{
     padding-left: 5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    text-align: justify;
 }
 
 
@@ -388,8 +408,10 @@ nav{
     font-size: 1.25rem;
 } 
 
-
-
+#email a, #instagram a, #twitter a{
+    text-decoration: none;
+    color: #212529;
+}
 
 
 

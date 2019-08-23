@@ -208,6 +208,49 @@ nav{
 
 
 /* Ingredients and Directions */
+@media print{
+    body * {
+        visibility: hidden;
+    }
+
+    #to-print, #to-print * {
+        visibility: visible;
+     }
+
+    #to-print  {
+        position: absolute;
+        top: 15rem;
+        left: 2.5rem;
+        right: 2.5rem;
+        page-break-before: always;
+    }
+
+    .s3 .container .row .col-md-12 .col-md-6 h1{
+        visibility: visible;
+        position: absolute;
+        top: -5rem;
+        color: #333333;
+    }
+
+    .s3 .container .row .col-md-12 .col-md-6 {
+        margin-left: 2rem;
+    }
+
+    
+    html, body {
+        height:100vh; 
+        overflow: hidden;
+      }
+ 
+}
+
+
+
+
+
+
+
+
 .dir-list{
     list-style-type: none;
     border-left: 1px solid lightgray;
@@ -227,6 +270,24 @@ nav{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+.s3 #recipe .print{
+    padding: 0;
+    margin: 0.5rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    /* height: 75%; */
+}
+
+.s3 #recipe .print .btn{
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+}
+
+
+
 
 .row .ingredients{
     border-right-style: none;

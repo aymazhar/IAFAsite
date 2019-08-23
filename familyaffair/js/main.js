@@ -9,20 +9,20 @@ window.addEventListener('scroll', function() {
   
   
   // Smooth Scrolling
-  $('#navbar a, .btn').on('click', function(event) {
-    if (this.hash !== '') {
-      event.preventDefault();
+  // $('#navbar a, .btn').on('click', function(event) {
+  //   if (this.hash !== '') {
+  //     event.preventDefault();
   
-      const hash = this.hash;
+  //     const hash = this.hash;
   
-      $('html, body').animate(
-        {
-          scrollTop: $(hash).offset().top - 100
-        },
-        700
-      );
-    }
-  });
+  //     $('html, body').animate(
+  //       {
+  //         scrollTop: $(hash).offset().top - 100
+  //       },
+  //       700
+  //     );
+  //   }
+  // });
 
 
 
@@ -46,11 +46,18 @@ window.addEventListener('scroll', function() {
     // Main header - fade ins 
 
   $("#mainhead .main-content h2").delay(1000).animate({opacity: 1}, 700);
-
   $("#mainhead .main-content .row .display-4").delay(1400).animate({opacity: 1}, 700);
-
   $("#mainhead .main-content .row .display-5").delay(1800).animate({opacity: 1}, 700);
-
   $("#mainhead .main-content .row p, #mainhead .main-content .buttons").delay(2700).animate({opacity: 1}, 700);
+
+
+  function printRecipe(){
+    console.log('true');
+  }
+  
+
+  // set serving size to editable
+  // as its being edited, multiply serving size by ingredieants
+  //set values
 
  

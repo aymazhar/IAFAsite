@@ -10,12 +10,15 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    
+    
     <title> It's a Family Affair</title>
 </head>
 <body id="home">
 
     <nav class="navbar navbar-expand-lg navbar-light sticky">
-        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+        <div id="nav-1" class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
             <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#mainhead">Home</a>
@@ -25,15 +28,15 @@
                 </li>
             </ul>
         </div>
-        <div class="nav-elem my-2 order-0 order-md-1 position-relative">
-            <a class="mx-auto" href="#mainhead">
-                <img id="nav-img" src="./img/logos/fa_logo3.png" class="rounded-circle navbarcircle">
+        <!-- <div id="nav-2" class="nav-elem my-2 order-0 order-md-1">
+            <a class="mx-auto" href="index.html">
+                <img src="./img/logos/fa_logo3.png" class="rounded-circle navbarcircle">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+        </div> -->
+        <div id="nav-3" class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
             <ul class="navbar-nav mr-auto text-center">
                 <li class="nav-item">
                     <a class="nav-link" href="#recipe">Recipes</a>
@@ -43,20 +46,11 @@
                 </li>
             </ul>
         </div>
-        <div class="socialmedia justify-content-end">
-                <a target="_blank" href="https://www.instagram.com/sunlife.familyaffair/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            
-                <a target="_blank" href="https://twitter.com/SunLifeFA?lang=en">
-            <i class="fab fa-twitter"></i></a>
-    
-        </div>
     </nav>
 
 
-    <div id="mainhead">
-        <div class="main-content container-fluid">
+  <div id="mainhead">
+        <div class="main-content container-fluid justify-content-center">
             <h2 class="row col-md-auto justify-content-md-center">IT'S A</h2>
             <div class="row col-md-auto">
                 <h1 class="main-text display-4 ">Family</h1>
@@ -75,14 +69,16 @@
 <!-- SECTION: ABOUT US -->
     <section id="about">
         <div class="about-content container"> 
-            <h2 class="main-text row col-md-12 justify-content-end">
+            <h2 class="main-text row col-md-12">
                 What We Do
             </h2>
 
             <div class="about-desc row">
-                <iframe class="col-md-6 justify-content-start" id="teaser" width="560" height="315" src="https://www.youtube.com/embed/q5qxDIFOTGw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="col-md-6 justify-content-start" id="teaser" width="560" height="315" src="https://www.youtube-nocookie.com/embed/q5qxDIFOTGw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                
                 <p class="col-md-6 justify-content-end order-first order-md-2">
-                    South Asian Canadians bear a greater burden of diabetes, as they are twice as likely to develop the disease and its complications, and are diagnosed at a significantly younger age. Poor dietary habits are a key modifiable risk factor that puts South Asians at greater risk for obesity related diseases. Founded by the University of British Columbia, It's a Family Affair strives to change what it means to eat healthy. Through our in-school workshops, online recipes and cooking demonstrations, we hope to conduct a family-focused, “hands-on” model for teaching South Asian children and their parents lifelong strategies for eating and cooking healthy.  Make your meals a family affair. 
+                    Poor dietary habits are a key modifiable risk factor that puts South Asians at greater risk for obesity related diseases. Launched by the University of British Columbia, It's a Family Affair strives to change what it means to eat healthy. Through our in-school workshops, online recipes and cooking demonstrations, we hope to support parents with lifelong strategies for eating and cooking healthy. 
                 </p>
             </div>
         </div>
@@ -92,8 +88,8 @@
 <!-- RECIPES -->
     <section id="recipe">
         <div class="container">
-            <h2 class="row main-text justify-content-start"> Our Recipes </h2>
-            <div class="row">
+            <h2 class="row main-text"> Our Recipes </h2>
+            <div class="recipes row col-md-12">
                 <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
@@ -117,8 +113,8 @@
 <!-- SPONSORS -->
     <section id="sponsors">
         <div class="container">
-            <h2 class="row justify-content-md-center med-heading">Our Sponsors</h2>
-            <div class="items row justify-content-md-center">
+            <h2 class="row med-heading">Our Sponsors</h2>
+            <div class="items row">
                 <a class="col-md-3" target="blank_" href="https://www.ubc.ca/">
                     <img id="lg1" src="./img/logos/ubc-logo-short.png" alt="Sponsors">
                 </a>
@@ -143,13 +139,13 @@
     <section id="contactpage">
         <div class="contacts">            
         <div class="container">
-            <h2 class="row col-md-12 justify-content-center">Get in touch</h2>
+            <h2 class="row col-md-12">Get in touch</h2>
             <div class="row content">
-                <div class="col-md-7 justify-content-start">
+                <div class="col-md-6 justify-content-start order-md-0 order-1">
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.8045916870683!2d-123.1282213844129!3d49.26114958021728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673c2236eed27%3A0x6019349f49cc2a13!2sGordon+and+Leslie+Diamond+Health+Care+Centre!5e0!3m2!1sen!2sca!4v1563691108808!5m2!1sen!2sca" frameborder="0" style="border:0" allowfullscreen>
                     </iframe>
                 </div>
-                <div class="col-md-5 justify-content-end">
+                <div class="col-md-6 justify-content-end order-md-1 order-0">
                     <div class="contactinfo">
                             <div class="row" id="phone">
                                 <i class="fas fa-phone-alt col-md-1"></i>  
@@ -185,8 +181,6 @@
                                     </a>
                                 </div>
                             </div>
-                        
-                            
 
                             <div class="row" id="twitter">
                                 <i class="fab fa-twitter col-md-1"></i>
@@ -196,8 +190,6 @@
                                     </a>
                                 </div>
                             </div>
-
-
                     </div>
                 </div>
             </div>
@@ -208,9 +200,8 @@
 
 <!-- Footer-->
     <footer id='main-footer'>
-        <div class="row">
-            <p class="col-md-11 justify-content-start">Copyright &copy; 2019, It's a Family Affair, All Rights Reserved.           
-                <!-- <a href="#">Privacy Policy</a> -->
+        <div class="row justify-content-center">
+            <p class="col-md-12">Copyright &copy; 2019, It's a Family Affair, All Rights Reserved.           
             </p>
         </div>
     </footer>

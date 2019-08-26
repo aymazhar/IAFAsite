@@ -1,0 +1,166 @@
+
+/* IPHONE 5/SE */
+@media only screen and (max-width: 330px){
+    #mainhead .main-content .row .main-text{
+           font-family: 'Pacifico', cursive;
+           font-size: 5rem;
+   }
+
+   #sponsors .items #lg1, #sponsors .items #lg3 {
+        width: 180%;
+        padding-bottom: 1rem;
+        padding-left: 0rem;
+        margin-left: -2rem;
+    }
+    
+    #sponsors .items #lg2{
+        width: 150%;
+        padding-left: 0rem;
+        margin-left: -1rem;  
+    }
+
+    #sponsors .items #lg4{
+        width: 200%;
+        padding-left: 0rem;
+        margin-left: -1rem; 
+        padding-top: 3rem;
+    }
+
+    #contactpage .contacts .container h2{
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    #phone, #email, #address, #twitter, #instagram {
+        margin-top: 1.25rem;  
+        font-size: 1.1rem;
+    } 
+  }
+
+
+@media only screen and (max-width: 1000px){
+   
+    .navbar .nav-elem img {
+        margin-top: 1rem;
+   }
+
+   .navbar{
+       padding: 0;
+       margin: 0;
+   }
+
+   .navbar .nav-elem{
+       width: 110%;
+       background: white;
+       margin: 0 !important;
+       position: relative;
+   }
+
+   .navbar .nav-elem .navbar-toggler{
+       margin-right: 0;
+       margin-left: 1rem;
+       margin-top:0%;
+   }
+
+   #about .about-content h2 {
+        justify-content: center;
+    }
+
+    .about-desc p{
+        padding-right: 0;
+        padding-left: 3rem;
+        text-align: justify;
+        font-size: 0.95rem;
+    }
+
+    #recipe .container h2 {
+        justify-content: center;
+    }
+
+    #contactpage .contacts .container .row .col-md-6{
+        padding: 0;
+    }
+    
+    #contactpage .contacts .container .row .col-md-6 .contactinfo{
+        padding-left: 0rem;
+        padding-bottom: 3rem;
+    }
+
+    #contactpage .contacts .container .content{
+        margin: 2.5rem 0rem;
+    }
+
+    #phone, #email, #address, #twitter, #instagram {
+        margin-top: 1.25rem;  
+        font-size: 0.95rem;
+        justify-content: center;
+        text-align: center;
+    } 
+
+    .fas, .fab { 
+        color: #565656;
+        font-size: 1rem;
+    }
+  }
+
+
+@media only screen and (max-width: 768px){
+    .about-desc p{
+        margin-bottom: 3rem;
+        padding: 0rem 1rem;
+    }
+
+    #recipe .container .flip-card{
+        margin: 0.5rem 0;
+        padding: 0.5rem 0;
+    }
+
+    #recipe .container .recipes{
+        justify-content: center;
+    }
+    
+    #contactpage .map{
+        height: 150% !important;
+        width: 100% !important;
+    }
+
+    #contactpage .contacts .container .content .order-md-0{
+        padding: 1.5rem;
+        justify-content: center !important;
+    }   
+}
+
+@media only screen and (max-width: 610px){
+    #about .about-content h2{
+        justify-content: center;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #recipe .container h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 380px){
+
+    .flip-card {
+        width: 16rem;
+        height: 15rem;
+    }
+
+    .flip-card-inner {
+        width: 16rem;
+        height: 15rem;
+    }
+
+    #recipe .flip-card img{
+        width: 14rem !important;
+        height: 7rem !important;
+    }
+
+}
+
+

@@ -30,6 +30,12 @@ p {
    width: 100%;
 }
 
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* NAVBAR */
 nav{
     z-index: 1000;
@@ -44,17 +50,12 @@ nav{
     color: #4a4a4a;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #2AA041;
-}
-
 .navbar{
     position: sticky;
     opacity: 1;
     background: white;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
+    height: 70px;
+    padding: 2rem;
 }
 
 .sticky {
@@ -65,10 +66,12 @@ nav{
 }
 
 .navbarcircle{
+    margin-top: 45px;
     height: 120px;
     width: 120px;
     border: 1px solid white;
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+    
 }
 
 .nav-link{
@@ -76,24 +79,15 @@ nav{
     background: white;
 }
 
-.navbar .socialmedia a{
-    text-decoration: none;
-}
-
-.navbar .socialmedia .fab {
+.navbar .fab {
     color: #565656;
     padding-left: 1.5rem;
     font-size: 1.6rem;
 }
 
-.navbar .socialmedia .fab:hover{
-    text-decoration: none;
+.navbar .fab:hover{
     color: #f03b00;
 }
-
-
-
-
 
 
 /* Mainhead  */
@@ -102,9 +96,8 @@ nav{
     background: url('../img/revamp_header.jpg') no-repeat center center/cover;
     height: 100vh;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     overflow: hidden;
-
     background-attachment: fixed;
 }
 
@@ -116,7 +109,7 @@ nav{
     width: 100%;
     /* Overlay */
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -124,8 +117,6 @@ nav{
 }
 
 #mainhead .main-content .row{
-    padding-left: 6rem;
-    padding-right: 6rem;
     justify-content: center;
 } 
 
@@ -178,23 +169,18 @@ nav{
 
 
 
-
-
 /* About US */
 
 #about{
     background: url('../img/aboutheader2.jpg') no-repeat center center/cover;
-    height: 80vh;
+    padding: 4rem 1rem;
 }
 
 #about .about-content h2{
     font-family: 'Pacifico', cursive;
     font-size: 5rem;
     color: #F2A12C;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 #teaser {
@@ -207,23 +193,20 @@ nav{
 .about-desc{
     margin-top: 3rem;
     text-align: center;
+    justify-content: flex-end;
 }
 
 .about-desc p{
-    padding-left: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin:0;
     text-align: justify;
+    padding-left: 5rem;
 }
-
-
 
 
 /* Recipes */
 
 #recipe{
-    margin-top: 1rem;
-    padding-bottom: 7rem;
+    padding: 4rem 1rem;
     background: url('../img/recipeheader3.png') no-repeat center center/cover;
     overflow: hidden;
 }
@@ -236,9 +219,14 @@ nav{
     font-family: 'Pacifico', cursive;
     font-size: 5rem;
     color: #2AA041;
-    padding: 2rem;
-    margin-bottom: 3rem;
+    justify-content: flex-start;
+    text-align: center;
 }
+
+#recipe .container .recipes{
+    margin: 3rem 0rem;
+}
+
 
 #recipe .container .flip-card{
     margin: 0.5rem 0;
@@ -297,7 +285,6 @@ nav{
       text-decoration: none;
       color: white;
       font-size: 1.5rem;
-      /* margin-top: 10rem; */
       font-family: 'Pacifico', cursive;
   }
 
@@ -316,16 +303,22 @@ nav{
 
 /* SPONSORS */
 #sponsors{
-    padding: 5rem;  
+    padding: 4rem;  
     background: #1B2C36;
     overflow: hidden;
+    width: 100%;
+}
+
+#sponsors .container .med-heading{
+    justify-content: center;
 }
 
 #sponsors .container .med-heading{
     font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     padding: 1.5rem 0;
+    text-align: center;
 }
 
 #sponsors .items{
@@ -337,7 +330,6 @@ nav{
     display: block;
     width: 90%;
     padding: 2rem;
-
 }
 
 #sponsors .items #lg1 {
@@ -350,10 +342,10 @@ nav{
 }
 
 
-
 /* Contact */ 
  #contactpage {
-    background: url('../img/contactheader.jpg') no-repeat center center/cover;  
+    background: url('../img/contactheader.jpg') no-repeat center center/cover; 
+    overflow: hidden;
 }
 
 #contactpage .contacts{
@@ -363,10 +355,10 @@ nav{
 #contactpage .contacts .container h2{
     font-family: 'Pacifico', cursive;
     color: #F2A12C;
-    font-size: 3rem;
-    margin: 0;
+    font-size: 4rem;
     width: 100%;
     justify-content: center;
+    text-align: center;
     background-color: rgb(255,255,255,0.7);
 }
 
@@ -375,17 +367,17 @@ nav{
 }
 
 #contactpage .contacts .container .content{
-    margin: 3rem 0rem;
+    margin: 5rem 0rem;
 }
 
-#contactpage .contacts .container .row .col-md-7 iframe{
+#contactpage .contacts .container .row .col-md-6 iframe{
      margin: 0;
-     width: 90%;
+     width: 95%;
      height: 100%;
  }
 
-#contactpage .contacts .container .row .col-md-5{
-    padding-left: 1.5rem;
+#contactpage .contacts .container .row .col-md-6{
+    padding-left: 4rem;
 }
 
 .fas, .fab { 
@@ -413,57 +405,22 @@ nav{
     color: #212529;
 }
 
-
-
-
-
-
-
-
-
 /* Footer */
 #main-footer {
     display: flex;
     padding: 1.1rem;
-    padding-bottom: 0.5rem;
     background-color: #1B2C36;
+    justify-content: center;
+    text-align: center;
 }
-
-.socialmedia{
-    margin-right: 0rem; 
-}
-
-/* .fab {
-    color: white;
-    padding-left: 1.5rem;
-    font-size: 1.6rem;
-} */
-
-/* .fab:hover{
-    color: #f03b00;
-} */
 
 #main-footer .row{
     width: 100%;
-    margin:0;
-    padding:0;
 }
 
 #main-footer .row p {
     font-style: 'Roboto' sans-serif;
     font-size: 0.7rem;
-    text-align: left;
-    margin-left: 0px;
-    margin-bottom: 0;
     color: white;
-}
-
-#main-footer .row p a {
-    text-decoration: none;
-    color: white;
-}
-
-#main-footer .row p a:hover {
-    text-decoration: none;
-    color: #f03b00;
+    margin-bottom: 0rem;
 }

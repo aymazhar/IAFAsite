@@ -1,0 +1,156 @@
+@media only screen and (max-width: 1000px){
+    h1{
+       font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+   .recinfo {
+     border-style: none;
+   }
+
+   .dir-list{
+       border-style: none;
+   }
+   
+   .directions h4 {
+       border-top: 1px solid lightgrey;
+       
+   }
+
+   .ingredients{
+       padding-bottom: 2rem;
+   }
+
+   #servings{
+       padding-top: 2rem;
+   }
+
+   #main-footer .col-md-12{
+       padding-top: 0;
+   }
+
+   #time{
+       border-style: none;
+       border-top: 1px solid lightgray;
+       border-bottom: 1px solid lightgray;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+   }
+
+   #main-footer .row {
+       padding-top: 1rem;
+       padding-bottom: 0rem;
+       justify-content: center;
+   }
+
+   #main-footer .row .socialmedia{
+       padding-top: 0rem;
+       padding-left: 4rem;
+   }
+
+   #main-footer .row .col-md-10{
+       padding-left: 5rem;
+   }
+ }
+
+
+@media only screen and (max-width: 500px){
+   .s3{
+      padding: 4rem 1rem;
+      background: #1B2C36;
+  }
+  
+  .container{
+      background: white;
+      border-radius: 10px;
+      z-index: 30;
+  }
+
+  .s3 .main{
+     padding: 0.5rem;
+  }
+
+  .s3 .main .row .row .col-lg-6 p{
+     text-align: center;
+     justify-content: center;
+  }
+  
+  .s3 .main .col-md-12{
+     margin-top: 0rem;
+  }
+
+  .recipeinfo{
+     padding: 2rem;
+  }
+
+  .s3 .btn{
+     margin: 1rem;
+  }
+
+  .s3 .buttons{
+     padding: 1rem 0rem;
+  }
+
+  .dir-list{
+     padding-left: 0rem;
+  }
+
+   .dir-list li {
+      padding-bottom: 1.5rem;
+   }
+
+   .s3 .cooking-demo{
+      padding: 1rem 0rem;
+   }
+
+   .s3 .cooking-demo .row{
+      padding: 0.3rem;
+   }
+
+
+   .s3 .cooking-demo h2{
+      text-align: center;
+      justify-content: center;
+      padding: 2rem 0rem;
+   }
+
+   
+
+}
+
+
+   
+  /* Responsive */
+/* @media (min-width: 992px) {
+   .navbar {
+       height:50px;
+       padding: 0;
+       background-color: white;
+       color: grey;
+       opacity: 1;
+       z-index: 10;
+   }
+} */
+
+
+/* @media only screen and (max-width: 1000px){
+  
+   .navbar .nav-elem img {
+       margin-top: 1rem;
+  }
+
+  .navbar .nav-elem{
+      width: 100%;
+  }
+
+  .navbar .nav-elem .navbar-toggler{
+      margin-right: 0;
+      margin-left: 1rem;
+      margin-top:0%;
+  }
+ } */
+
+

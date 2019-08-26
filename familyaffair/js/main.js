@@ -51,13 +51,7 @@ window.addEventListener('scroll', function() {
   $("#mainhead .main-content .row p, #mainhead .main-content .buttons").delay(2700).animate({opacity: 1}, 700);
 
 
-  function printRecipe(){
-    console.log('true');
-  }
-  
-
   // set serving size to editable
   // as its being edited, multiply serving size by ingredieants
   //set values
 
- 

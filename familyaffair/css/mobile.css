@@ -44,52 +44,38 @@
 
 
 @media only screen and (max-width: 1000px){
-    
     .navbarcircle{
-        margin: 0.5rem; 
-        margin-bottom: -3.5rem;
-    }
-
-    #nav-2{
+        margin: 0rem; 
+        margin-bottom: -6.5rem;
+     }
+  
+     #nav-2{
+        width: 100%;
         z-index: 100000000;
+        margin: 0rem !important;
         justify-content: flex-end;
-    }
-
-
-    #nav-2 .navbar-toggler{
-        margin-left: 45rem;
-        margin-right: 0rem;
-    }
-
-
-   .navbar{
-       padding: 0;
-   }
-
-   .navbar .nav-elem{
-       width: 110%;
-       background: white;
-       margin: 0 !important;
-       position: relative;
-   }
-
-   .navbar .nav-elem .navbar-toggler{
-       margin-right: 0;
-       margin-left: 1rem;
-       margin-top:0%;
-   }
-
-   #nav-1{
-       order: 1;
-   }
-   #nav-2{
-    order: 0;
-    }
-
-
-
-
-   #about .about-content h2 {
+     }
+  
+     #nav-2 .navbar-toggler{
+        justify-content: flex-end;
+        margin-top: 0rem;
+        margin-bottom: 0.75rem;
+     }
+    
+     #nav-2 a{
+        width: 100%;
+        margin: 0rem !important;
+        padding-left: 1rem !important;
+     }
+  
+     #nav-1{
+        order: 1;
+     }
+     #nav-2{
+        order: 0;
+     }
+    
+    #about .about-content h2 {
         justify-content: center;
     }
 
@@ -130,19 +116,9 @@
     }
   }
 
-@media only screen and (max-width: 920px){
-    #nav-2 .navbar-toggler{
-        margin-left: 40rem;
-        margin-right: 0rem;
-    }
-}
+
 
 @media only screen and (max-width: 768px){
-
-    #nav-2 .navbar-toggler{
-        margin-left: 32rem;
-        margin-right: 0rem;
-    }
 
     .about-desc p{
         margin-bottom: 3rem;
@@ -170,10 +146,6 @@
 }
 
 @media only screen and (max-width: 610px){
-    #nav-2 .navbar-toggler{
-        margin-left: 23rem;
-        margin-right: 0rem;
-    }
    
     #about .about-content h2{
         justify-content: center;
@@ -186,27 +158,7 @@
     }
 }
 
-@media only screen and (max-width: 565px){
-    #nav-2 .navbar-toggler{
-        margin-left: 20rem;
-        margin-right: 0rem;
-    }
-}
-
-@media only screen and (max-width: 420px){
-    #nav-2 .navbar-toggler{
-        margin-left: 11rem;
-        margin-right: 0rem;
-    }
-}
-
 @media only screen and (max-width: 380px){
-
-    #nav-2 .navbar-toggler{
-        margin-left: 9rem;
-        margin-right: 0rem;
-    }
-
 
     .flip-card {
         width: 16rem;
@@ -221,14 +173,5 @@
     #recipe .flip-card img{
         width: 14rem !important;
         height: 7rem !important;
-    }
-
-}
-
-
-@media only screen and (max-width: 320px){
-    #nav-2 .navbar-toggler{
-        margin-left: 5.5rem;
-        margin-right: 0rem;
     }
 }

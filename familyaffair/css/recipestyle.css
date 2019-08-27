@@ -106,7 +106,8 @@ nav{
 }
 
 .navbarcircle{
-    margin-top: 50px;
+    /* margin: 1rem; */
+    margin-bottom: -5rem;
     height: 120px;
     width: 120px;
     border: 1px solid white;
@@ -129,8 +130,9 @@ nav{
     color: #f03b00;
 }
 
-    
-
+.mx-auto{
+    margin: 0rem 2rem;
+}
 
 
 /* Main Recipe Page */
@@ -186,7 +188,7 @@ nav{
 }
 
 .btn-nutri{
-    background: #90a88e;
+    background: #90a88e; 
 }
 
 .btn-demo:hover, .btn-nutri:hover {
@@ -249,7 +251,7 @@ nav{
         visibility: visible;
         position: absolute;
         top: -40rem;
-        left: 10rem;
+        left: 9rem;
         color: #333333;
     }
 
@@ -371,51 +373,6 @@ nav{
     padding: 2.5rem;
 }
 
-
-
-
-/* Nutritional Info */
-
-
-
-.s3 .container #nutrition h2{
-    padding-left: 2rem;
-    margin:0;
-    padding: 1rem 0rem;
-
-}
-
-.s3 .container #nutrition .row{
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
-
-.nutr-info{
-    border: 2px solid #F25E2E;
-    color: white;
-    background-color: #F25E2E;
-    height: 8rem;
-    width: 8rem;
-    text-align: center;
-    padding-top: 3rem; 
-    margin: 0 2rem;
-    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.nutr-info:hover{
-    box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
-    transform: scale(1.1);
-    transition: 1.2s;
-}
-
-#nutrition .nutri-circles{
-    justify-content: center;
-}
-
-#nutrition .row .nutr-info p {
-    line-height: 0.5rem;
-}
-
 .custom-checkbox{
     margin: 0.5rem;
 }
@@ -433,29 +390,132 @@ nav{
     box-shadow: 0 0 0 0.2rem rgba(131,153,130,.5);
 }
 
-
-
 .custom-control-label{
     padding-left: 0.5rem;
     text-align: left;
 }
 
+
+/* Nutritional Info */
+.s3 .nutrition-section{
+    padding: 5rem;
+}
+
 #nutrition{
     text-align: center;
+    overflow: hidden;
+    margin: 0;
 }
 
-
-.nutrition-section{
-    padding-bottom: 2rem;
-    justify-content: center;
+#nutrition h2{
+    padding: 1.5rem;
 }
 
-.content-circle{
-    border: 2px solid grey;
-    box-shadow: 0px 4px 8px 0 regba(0,0,0,0.2);
-    height: 10rem;
-    width: 2rem;
+#nutri-desc{
+    text-align: justify;
+}
 
+:root{
+    /* --primary-color: #f03b00; */
+    --primary-color: #839982;
+    /* --secondary-color: #F25E2E; */
+    --secondary-color: #a4bda1;
+}
+
+#timeline ul {
+    background: var(--primary-color);
+    padding: 50px 0;
+}
+
+/* create line */
+#timeline ul li{
+    list-style:  none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: var(--primary-color);
+    color: white;
+    text-align: left;
+}
+
+/* Boxes */
+#timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 20rem;
+    padding: 1.5rem;
+    background: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#timeline ul li div h3{
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+}
+
+#timeline ul li div p{
+    padding-top: 0.5rem;
+}
+
+/* Right Side */
+#timeline ul li:nth-child(odd) div{
+    left: 3rem;
+    transform: translateX(200px);
+}
+
+/* Left Side */
+#timeline ul li:nth-child(even) div{
+    left: -22.5rem;
+    transform: translateX(-200px);
+}
+
+/* Dots */
+#timeline ul li:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: var(--secondary-color);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Arrow base */
+#timeline div:before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* Right arrows */
+#timeline ul li:nth-child(odd) div:before{
+ left: -15px;
+ border-width: 8px 16px 8px 0;
+ border-color: transparent var(--secondary-color) transparent transparent;
+
+}
+
+#timeline ul li:nth-child(even) div:before{
+    right: -15px;
+    border-width: 8px 0px 8px 16px;
+    border-color: transparent transparent transparent var(--secondary-color);  
+}
+
+/* Show class */
+#timeline ul li.show div{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
 }
 
 

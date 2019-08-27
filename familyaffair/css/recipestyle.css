@@ -74,6 +74,9 @@ p {
 }
 
 
+
+
+
 /* NAVBAR */
 nav{
     z-index: 1000;
@@ -81,15 +84,6 @@ nav{
 
 .navbar-toggler:hover{
     border-color:#2AA041;
-}
-
-.navbar-nav {
-    text-align: right;
-    color: #4a4a4a;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #2AA041;
 }
 
 .navbar{
@@ -106,32 +100,15 @@ nav{
 }
 
 .navbarcircle{
-    /* margin: 1rem; */
     margin-bottom: -5rem;
     height: 120px;
     width: 120px;
     border: 1px solid white;
-    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
-    
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2); 
 }
 
-.nav-link{
-    color: grey;
-    background: white;
-}
-
-.navbar .fab {
-    color: #565656;
-    padding-left: 1.5rem;
-    font-size: 1.6rem;
-}
-
-.navbar .fab:hover{
-    color: #f03b00;
-}
-
-.mx-auto{
-    margin: 0rem 2rem;
+#nav-2 .mx-auto{
+    padding: 0rem 1.5rem;
 }
 
 
@@ -221,7 +198,10 @@ nav{
 
 
 
-
+#to-print{
+    visibility: hidden;
+    display: none;
+}
 
 
 
@@ -237,28 +217,16 @@ nav{
 
     #to-print, #to-print * {
         visibility: visible;
+        display: inline;
      }
 
     #to-print  {
         position: absolute;
-        top: 15rem;
-        left: 2.5rem;
+        top: 1rem;
+        left: 5rem;
         right: 2.5rem;
         page-break-before: always;
     }
-
-    .s3 .container .row .col-lg-12 .col-lg-6 h1{
-        visibility: visible;
-        position: absolute;
-        top: -40rem;
-        left: 9rem;
-        color: #333333;
-    }
-
-    .s3 .container .row .col-lg-12 .col-lg-6 {
-        margin-left: 2rem;
-    }
-
     
     html, body {
         height:100vh; 

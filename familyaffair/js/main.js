@@ -51,7 +51,12 @@ window.addEventListener('scroll', function() {
   $("#mainhead .main-content .row p, #mainhead .main-content .buttons").delay(2700).animate({opacity: 1}, 700);
 
 
-  // set serving size to editable
+
+// PRINT
+
+
+
+  // set serving size to editabl
   // as its being edited, multiply serving size by ingredieants
   //set values
 

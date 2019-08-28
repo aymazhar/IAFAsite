@@ -193,20 +193,10 @@ nav{
     border-right: 1px solid lightgrey;
 }
 
-
-
-
-
-
 #to-print{
     visibility: hidden;
     display: none;
 }
-
-
-
-
-
 
 
 /* Ingredients and Directions */
@@ -236,12 +226,6 @@ nav{
 }
 
 
-
-
-
-
-
-
 .dir-list{
     list-style-type: none;
     border-left: 1px solid lightgray;
@@ -267,7 +251,6 @@ nav{
     margin: 0.5rem;
     margin-left: 0rem;
     margin-bottom: 0rem;
-    /* height: 75%; */
 }
 
 .s3 #recipe .print .btn{
@@ -276,9 +259,6 @@ nav{
     margin-bottom: 0rem;
     margin-top: 2rem;
 }
-
-
-
 
 .row .ingredients{
     border-right-style: none;
@@ -297,10 +277,6 @@ nav{
     align-items: center;
     justify-content: center;
 }
-
-/* .ing-dir{
-    margin-top: 3rem;
-} */
 
 .ing-dir .row .col-md-12{
     text-align: left;
@@ -384,9 +360,7 @@ nav{
 }
 
 :root{
-    /* --primary-color: #f03b00; */
     --primary-color: #839982;
-    /* --secondary-color: #F25E2E; */
     --secondary-color: #a4bda1;
 }
 
@@ -411,7 +385,7 @@ nav{
 #timeline ul li div {
     position: relative;
     bottom: 0;
-    width: 20rem;
+    width: 18rem;
     padding: 1.5rem;
     background: var(--secondary-color);
     transition: all 0.5s ease-in-out;
@@ -437,8 +411,12 @@ nav{
 
 /* Left Side */
 #timeline ul li:nth-child(even) div{
-    left: -22.5rem;
+    left: -20.5rem;
     transform: translateX(-200px);
+}
+
+#timeline ul li div p, #timeline ul li div h3{
+    margin-left: 0.5rem;
 }
 
 /* Dots */
@@ -486,9 +464,6 @@ nav{
     opacity: 1;
 }
 
-
-
-
 /* Cooking Demo */
 .cooking-demo {
     padding: 3rem;
@@ -504,14 +479,6 @@ nav{
     padding: 2rem;
 }
 
-.s3 .cooking-demo .demo .row{
-    
-    height: 60vh;
-}
-
-#demo-vid{
-    width: 90%;
-}
 
 
 /* Footer */

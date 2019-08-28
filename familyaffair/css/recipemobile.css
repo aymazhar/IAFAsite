@@ -38,16 +38,18 @@
       order: 0;
    } 
 
-
 }
 
 @media(max-width: 900px){
-  
+  body{
+     font-size: .8rem;
+  }
    #timeline  {
        justify-content: flex-start;
        margin-left: 20rem;
    }
 
+  
    #timeline ul li:nth-child(even) div{
        left: 3rem;
    }
@@ -58,6 +60,10 @@
        border-color: transparent var(--secondary-color) transparent transparent;
       
       }
+
+      #timeline ul li div h3{
+         font-size: 1.2rem;
+      }
 }
 
 
@@ -66,11 +72,6 @@
    #timeline  {
        justify-content: flex-start;
        margin-left: 0rem;
-   }
-
-   #timeline ul li div {
-       width: calc(100vw - 16rem);
-       
    }
 }
 

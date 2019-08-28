@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
+    <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="css/recipestyle.css">
     <link rel="stylesheet" href="css/recipemobile.css">
     
@@ -17,17 +18,12 @@
 <body>
     
 
-<!-- NAVBAR -->
-
-<nav class="navbar navbar-expand-lg navbar-light sticky">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky">
         <div id="nav-1" class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
             <ul class="navbar-nav ml-auto text-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#recipe">Recipe</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#recipe">Recipe</a></li>
             </ul>
         </div>
         <div id="nav-2" class="row nav-elem my-2 order-0 order-md-1 position-relative">
@@ -40,272 +36,238 @@
         </div>
         <div id="nav-3" class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
             <ul class="navbar-nav mr-auto text-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#nutrition">Nutrition</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#demo">Demo</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#nutrition">Nutrition</a></li>
+                <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
             </ul>
         </div>
     </nav>
 
-
-    <!-- Main Header Recipe Info -->
-<div class="s3">
-    <div class="container main"> 
-        <div class="row">
-            <div class="col-lg-12 row">
-                <div class="col-lg-6">
-                    <h1>Much Better Butter Chicken</h1>
-                    <p class="font-weight-light">
-                        Indulge your cravings with our delicately seasoned and flavourful butter chicken recipe. Easy to make, tasty, and healthy, this recipe is sure to become a new family favourite.</p>
-                </div>
-                <div class="col-lg-6 order-first order-lg-2">
-                    <video class="rec-teaser embed-responsive-item" autoplay="" loop="loop" src="./img/fabanner.mp4" poster="./img/mbbc.png"></video>
-                </div>
-            </div>
-            <div class="col-md-12">
-
-                <div class="row recipeinfo"> 
-                    <div class="recinfo d-inline col-md">
-                        <div class="row">
-                            <i class="fas fa-carrot"></i>
-                            <div>
-                                <p class="recnum"> 16</p>
-                                <p class="recnuminfo"> Ingredients </p>
-                            </div>  
-                        </div>
+    <!-- MAIN HEADER -->
+    <div class="s3">
+        <div class="container main"> 
+            <div class="row">
+                <div class="col-lg-12 row">
+                    <div class="col-lg-6">
+                        <h1>Much Better Butter Chicken</h1>
+                        <p class="font-weight-light">Indulge your cravings with our delicately seasoned and flavourful butter chicken recipe. Easy to make, tasty, and healthy, this recipe is sure to become a new family favourite.</p>
                     </div>
-
-                    <div id="time" class="recinfo d-inline col-md">
-                        <div class="row">
+                    <div class="col-lg-6 order-first order-lg-2">
+                        <video class="rec-teaser embed-responsive-item" autoplay="" loop="loop" src="./img/fabanner.mp4" poster="./img/mbbc.png"></video>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row recipeinfo"> 
+                        <div class="recinfo d-inline col-md">
+                            <div class="row">
+                                <i class="fas fa-carrot"></i>
+                                <div>
+                                    <p class="recnum"> 16</p>
+                                    <p class="recnuminfo"> Ingredients </p>
+                                </div>  
+                            </div>
+                        </div>
+                        <div id="time" class="recinfo d-inline col-md">
+                            <div class="row">
                                 <i class="far fa-clock"></i>
-                            <div>
-                                <p class="recnum" > 30 </p>
-                                <p class="recnuminfo"> Minutes </p>
+                                <div>
+                                    <p class="recnum" > 30 </p>
+                                    <p class="recnuminfo"> Minutes </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="recinfo d-inline col-md">
-                        <div class="row">
+                        <div class="recinfo d-inline col-md">
+                            <div class="row">
                                 <i class="fas fa-utensils"></i>
-                            <div>
-                                <p class="recnum"> 4 </p>
-                                <p class="recnuminfo"> Servings </p>
+                                <div>
+                                    <p class="recnum"> 4 </p>
+                                    <p class="recnuminfo"> Servings </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row buttons">
+                    <div class="row buttons">
                         <a class="btn btn-nutri" href="#nutrition" role="button">Nutrition</a>
                         <a class="btn btn-demo" href="#demo" role="button">Watch Our Demo</a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>    
+
+    <!-- INGREDIENTS AND DIRECTIONS -->
+    <div class="s3">
+        <div id="recipe" class="container ing-dir">
+            <div class="row">
+                <div class="ingredients col-md-6">
+                    <div id="header-ing" class="row">
+                        <span id="ing-title" class="col-md-6">Ingredients</span>
+                        <span id="servings" class="col-md-6">Servings:</h6>
+                        <span id="servings-num" class="col-md-2 ">4</h6>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check1">
+                        <label class="custom-control-label" for="check1">1 tbs <b>grapeseed oil</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check2">
+                        <label class="custom-control-label" for="check2">1/2 cup <b> chopped red onion</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check3">
+                        <label class="custom-control-label" for="check3">3 tbs <b> chopped fresh garlic</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check4">
+                        <label class="custom-control-label" for="check4">1 tbs <b>chopped fresh ginger</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check5">
+                        <label class="custom-control-label" for="check5">2 tbs <b>tomato paste</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check6">
+                        <label class="custom-control-label" for="check6">1 tbs <b> brown sugar </b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check7">
+                        <label class="custom-control-label" for="check7">1 tbs <b>cumin seeds </b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check8">
+                        <label class="custom-control-label" for="check8">1 tbs <b>garam masala</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check9">
+                        <label class="custom-control-label" for="check9">1 tsp <b>red chile flakes</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check10">
+                        <label class="custom-control-label" for="check10">1 tsp <b>turmeric</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check11">
+                        <label class="custom-control-label" for="check11">1 tsp <b>salt</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check12">
+                        <label class="custom-control-label" for="check12">2 cups <b>chopped chicken breast</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check13">
+                        <label class="custom-control-label" for="check13">3/4 cup <b>low-fat buttermilk</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check14">
+                        <label class="custom-control-label" for="check14">1 tbs <b>cornstarch</b></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check15">
+                        <label class="custom-control-label" for="check15"> <b>kasuri methi</b> to taste</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="check16">
+                        <label class="custom-control-label" for="check16"><b>cooking spray</b></label>
+                    </div>
+                </div>
+        
+                <div class="directions col-md-6">
+                    <h4>Directions</h4>
+                    <ol class="dir-list">
+                        <span class="direc-title">STEP 1</span>
+                        <li>In a medium mixing bowl, add the chopped chicken, grapeseed oil, turmeric, brown sugar, salt and half of the ginger and garlic. Mix together to coat the chicken.</li>
+                        
+                        <span class="direc-title">STEP 2</span>
+                        <li>Add the chicken to a non-stick pan over medium heat. Let the chicken cook for about 6 minutes, or until it is no longer pink in the center. Remove the chicken from the pan and place it to the side.</li>
+                        
+                        <span class="direc-title">STEP 3</span>
+                        <li>Coat the pan in cooking spray, add onions and the rest of the ginger and garlic. Saut‌&#233 for about 4 minutes or until the onions start to turn golden. </li>
+                        
+                        <span class="direc-title">STEP 4</span>
+                        <li>Add the tomato paste, water, chile flakes, cumin seeds, buttermilk, cornstarch and cooked chicken to the pan. Let all the ingredients simmer in the pan for a few minutes or until the sauce thickens. Add in kasuri methi and garam masala to taste. Serve with bulgar wheat.</li>
+                    </ol>
                 </div>
             </div>
-        </div>   
+            <div class="row col-md-12 print">
+                <button id="print" onclick="window.print()" class="btn btn-demo">Print</button>
+            </div>
+        </div>
+    </div>    
+
+    <!-- RECIPE TO PRINT -->
+    <div id="to-print">
+        <img src="./img/FA Recipe.jpg" width="900px" height="auto" alt="Recipe">
     </div>
-</div>    
 
-
-<!-- INGREDIENTS AND DIRECTIONS -->
-<div class="s3">
-    <div id="recipe" class="container ing-dir">
-                <div class="row">
-                    <div class="ingredients col-md-6">
-                        <div id="header-ing" class="row">
-                            <span id="ing-title" class="col-md-6">Ingredients</span>
-                            <span id="servings" class="col-md-6">Servings:</h6>
-                            <span id="servings-num" class="col-md-2 ">4</h6>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check1">
-                            <label class="custom-control-label" for="check1">1 tbs <b>grapeseed oil</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check2">
-                            <label class="custom-control-label" for="check2">1/2 cup <b> chopped red onion</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check3">
-                            <label class="custom-control-label" for="check3">3 tbs <b> chopped fresh garlic</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check4">
-                            <label class="custom-control-label" for="check4">1 tbs <b>chopped fresh ginger</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check5">
-                            <label class="custom-control-label" for="check5">2 tbs <b>tomato paste</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check6">
-                            <label class="custom-control-label" for="check6">1 tbs <b> brown sugar </b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check7">
-                            <label class="custom-control-label" for="check7">1 tbs <b>cumin seeds </b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check8">
-                            <label class="custom-control-label" for="check8">1 tbs <b>garam masala</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check9">
-                            <label class="custom-control-label" for="check9">1 tsp <b>red chile flakes</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check10">
-                            <label class="custom-control-label" for="check10">1 tsp <b>turmeric</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check11">
-                            <label class="custom-control-label" for="check11">1 tsp <b>salt</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check12">
-                            <label class="custom-control-label" for="check12">2 cups <b>chopped chicken breast</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check13">
-                            <label class="custom-control-label" for="check13">3/4 cup <b>low-fat buttermilk</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check14">
-                            <label class="custom-control-label" for="check14">1 tbs <b>cornstarch</b></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check15">
-                            <label class="custom-control-label" for="check15"> <b>kasuri methi</b> to taste</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check16">
-                            <label class="custom-control-label" for="check16"><b>cooking spray</b></label>
-                        </div>
-    
-                    </div>
-    
-                    <div class="directions col-md-6">
-                        <h4>Directions</h4>
-                        <ol class="dir-list">
-                            <span class="direc-title">STEP 1</span>
-                            <li>In a medium mixing bowl, add the chopped chicken, grapeseed oil, turmeric, brown sugar, salt and half of the ginger and garlic. Mix together to coat the chicken.</li>
-                            
-                            <span class="direc-title">STEP 2</span>
-                            <li>Add the chicken to a non-stick pan over medium heat. Let the chicken cook for about 6 minutes, or until it is no longer pink in the center. Remove the chicken from the pan and place it to the side.</li>
-                            
-                            <span class="direc-title">STEP 3</span>
-                            <li>Coat the pan in cooking spray, add onions and the rest of the ginger and garlic. Saut‌&#233 for about 4 minutes or until the onions start to turn golden. </li>
-                            
-                            <span class="direc-title">STEP 4</span>
-                            <li>Add the tomato paste, water, chile flakes, cumin seeds, buttermilk, cornstarch and cooked chicken to the pan. Let all the ingredients simmer in the pan for a few minutes or until the sauce thickens. Add in kasuri methi and garam masala to taste. Serve with bulgar wheat.</li>
-                        </ol>
-                    </div>
+    <!-- NUTRITIONAL INFORMATION -->
+    <div class="s3">
+        <div class="container nutrition-section">
+            <div id="nutrition" class="row col-md-12">
+                <h2>Nutrition</h2>
+                <div class="row justify-content-center col-md-12">
+                    <p id="nutri-desc">Did you know that traditional butter chicken recipes can have upto 620 calories, 42.9g of protein, 29.9g of fat and 34.9g of carbs? Thats a lot! Check out the nutritional information below to see why our recipe makes for much better butter chicken.</p>
                 </div>
-                <div class="row col-md-12 print">
-                    <button id="print" onclick="window.print()" class="btn btn-demo">Print</button>
+                
+                <div id="timeline" class="row col-md-12">
+                    <ul>
+                        <li>
+                            <div >
+                                <h3>258 Calories</h3>
+                                <p>By following healthy cooking techniques, using healthy substitutions and practicing portion control, our recipe cuts down on over half the calories per serving.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>22.2g of Protein</h3>
+                                <p>Our much better butter chicken uses lean white chicken as our main protein source. It's also lower in fat and calories. </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>5.75g of Fat</h3>
+                                <p> High amounts of saturated fats increase blood cholesterol levels and risk of heart disease. Our recipe swaps out vegetable oil, ghee and heavy whipping cream for grapeseed oil, cooking spray and buttermilk to reduce the amount of saturated fats. </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>30.8g of Carbs </h3>
+                                <p>Instead of eating your butter chicken with white rice, we recommend using bulgar wheat. Bulgar is a much healthier, low calorie alternative that is high in protein and fiber.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-    </div>
-</div>    
-
-<!-- Recipe to print -->
-<div id="to-print">
-    <img src="./img/FA Recipe.jpg" width="900px" height="auto" alt="Recipe">
-</div>
-
-
-
-
-<!-- NUTRITIONAL INFORMATION -->
-<div class="s3">
-    <div class="container nutrition-section">
-                <div id="nutrition" class="row col-md-12">
-                    <h2>Nutrition</h2>
-                    <div class="row justify-content-center col-md-12">
-                        <p id="nutri-desc">
-                            Did you know that traditional butter chicken recipes can have upto 620 calories, 42.9g of protein, 29.9g of fat and 34.9g of carbs? Thats a lot! Check out the nutritional information below to see why our recipe makes for much better butter chicken.
-                        </p>
-                        </p>
-                    </div>
-                   
-                    <div id="timeline" class="row col-md-12">
-                            <ul>
-                                <li>
-                                    <div >
-                                        <h3>258 Calories</h3>
-                                        <p>By following healthy cooking techniques, using healthy substitutions and practicing portion control, our recipe cuts down on over half the calories per serving.</p>
-                                    </div>
-                                </li>
-                    
-                                <li>
-                                    <div>
-                                        <h3>22.2g of Protein</h3>
-                                        <p>Our much better butter chicken uses lean white chicken.</p>
-                                    </div>
-                                </li>
-                    
-                                <li>
-                                    <div>
-                                        <h3>5.75g of Fat</h3>
-                                        <p> High amounts of saturated fats increase blood cholesterol levels and risk of heart disease. Our recipe swaps out vegetable oil, ghee and heavy whipping cream for grapeseed oil, cooking spray and buttermilk to reduce the amount of saturated fats. </p>
-                                    </div>
-                                </li>
-                    
-                                <li>
-                                    <div>
-                                        <h3>30.8g of Carbohydrates </h3>
-                                        <p>Instead of eating your butter chicken with white rice, try bulgar wheat. Bulgar is a much healthier, low calorie alternative that is high in protein and fiber.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                </div>
-    </div>
-</div>
-
-
-<!-- COOKING DEMONSTRATION -->
-<div class="s3">
-    <div class="container cooking-demo">
-        <div id="demo" class="row demo col-md-12">
-                <h2>How We Do It</h2>
-            <div class="row col-md-12">
-                 <iframe id="demo-vid" src="https://www.youtube-nocookie.com/embed/uvsVBYuyN_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
             </div>
         </div>
     </div>
-</div>
 
-
-    <!-- Footer-->
-<footer id='main-footer'>
-            <div class="row justify-content-center">
-                <p class="col-md-12">Copyright &copy; 2019, It's a Family Affair, All Rights Reserved.           
-                </p>
+    <!-- COOKING DEMO -->
+    <div class="s3">
+        <div class="container cooking-demo">
+            <div id="demo" class="row demo col-md-12">
+                <h2>How We Do It</h2>
+                <div class="row col-md-12">
+                    <iframe id="demo-vid" src="https://www.youtube-nocookie.com/embed/uvsVBYuyN_E" frameborder="0" width="600" height="337" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                </div>
             </div>
-</footer>
+        </div>
+    </div>
 
+    <!-- FOOTER -->
+    <footer id='main-footer'>
+        <div class="row justify-content-center">
+            <p class="col-md-12">Copyright &copy; 2019, It's a Family Affair, All Rights Reserved.</p>
+        </div>
+    </footer>
 
-
-
-
+    
     <!-- JQuery CDN -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- Local JS File -->
     <script src="js/main.js"></script>
-    
     <script src="js/nutrition.js"></script>
-
-
-<!-- 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    
+        
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>

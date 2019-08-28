@@ -7,27 +7,7 @@
            font-size: 5rem;
    }
 
-   #sponsors .items #lg1, #sponsors .items #lg3 {
-        width: 180%;
-        padding-bottom: 1rem;
-        padding-left: 0rem;
-        margin-left: -2rem;
-    }
-
-    #sponsors .items #lg2{
-        width: 150%;
-        padding-left: 0rem;
-        margin-left: -1rem;  
-    }
-
-    #sponsors .items #lg4{
-        width: 200%;
-        padding-left: 0rem;
-        margin-left: -1rem; 
-        padding-top: 3rem;
-    }
-
-    #contactpage .contacts .container h2{
+   #contactpage .contacts .container h2{
         font-size: 3rem;
     }
 
@@ -45,7 +25,6 @@
 
 @media only screen and (max-width: 1000px){
     .navbarcircle{
-        margin: 0rem; 
         margin-bottom: -6.5rem;
      }
   
@@ -58,14 +37,12 @@
   
      #nav-2 .navbar-toggler{
         justify-content: flex-end;
-        margin-top: 0rem;
         margin-bottom: 0.75rem;
      }
     
      #nav-2 a{
         width: 100%;
         margin: 0rem !important;
-        padding-left: 1rem !important;
      }
   
      #nav-1{
@@ -89,6 +66,18 @@
     #recipe .container h2 {
         justify-content: center;
     }
+
+    #sponsors .items img{
+        width: 120%;
+    }
+    
+    #sponsors .items #lg1 {
+        width: 140%;
+    }
+    
+    #sponsors .items #lg4 {
+        width: 160%;
+    } 
 
     #contactpage .contacts .container .row .col-md-6{
         padding: 0;
@@ -116,7 +105,38 @@
     }
   }
 
+@media only screen and (max-width: 900px){
+    #sponsors .items img{
+        width: 150%;
+    }
+    
+    #sponsors .items #lg1 {
+        width: 170%;
+    }
+    
+    #sponsors .items #lg4 {
+        width: 190%;
+    }
+}
 
+@media only screen and (max-width: 769px){
+    #sponsors .row{
+        justify-content: center;
+    }
+    
+    #sponsors .col-md-3{
+        padding: 0rem;
+        margin: 1rem;
+        margin-left: 2rem !important;
+        width: 110%;
+    }
+
+    #lg1, #lg2, #lg3, #lg4 {
+        margin-left: 0rem !important;
+        width: 100% !important;
+    }
+   
+}
 
 @media only screen and (max-width: 768px){
 
@@ -132,6 +152,32 @@
 
     #recipe .container .recipes{
         justify-content: center;
+    }
+ 
+    #sponsors .row{
+        margin-right: 0;
+    }
+
+    #sponsors .col-md-3{
+        margin: 1.5rem;
+        width: 30%;
+    }
+
+    #sponsors .items img{
+        width: 80% !important;
+        margin: 0rem 6rem;
+    }
+    
+    #sponsors .items #lg1 {
+        width: 100% !important;
+    }
+    
+    #sponsors .items #lg4 {
+        width: 100% !important;
+    }
+
+    #lg2, #lg3{
+        margin: 0rem 10rem;
     }
     
     #contactpage .map{
@@ -156,6 +202,40 @@
     #recipe .container h2 {
         font-size: 3rem;
     }
+
+    #sponsors .items img{
+        margin: 0rem 6rem;
+        width: 70%;
+    }
+
+    #sponsors .items #lg1 {
+        width: 90%;
+    }
+    
+    #sponsors .items #lg4 {
+        width: 90%;
+    }
+
+  
+}
+
+@media only screen and (max-width: 500px){
+    #sponsors .items img{
+        margin: 0rem 1rem;
+        width: 150% !important;
+   }
+
+   #sponsors .col-md-3{
+       margin: 2rem 3.5rem 2rem 1.5rem !important;
+   }
+
+   #sponsors .items #lg4 {
+    width: 170% !important;
+    }
+
+    #sponsors .items #lg1 {
+        width: 170% !important;
+    }
 }
 
 @media only screen and (max-width: 380px){
@@ -174,4 +254,5 @@
         width: 14rem !important;
         height: 7rem !important;
     }
+
 }

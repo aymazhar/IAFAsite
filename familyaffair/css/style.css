@@ -73,10 +73,11 @@ nav .nav-link{
 /* Mainhead  */
 
 #mainhead{
-    background: url('../img/revamp_header.jpg') no-repeat center center/cover;
+    background: url('../img/revamp_header1.png') no-repeat center center/cover;
+    max-width: 100%;
     height: 100vh;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 4.5rem;
     overflow: hidden;
     background-attachment: fixed;
 }
@@ -89,7 +90,7 @@ nav .nav-link{
     width: 100%;
     /* Overlay */
     position: absolute;
-    top: 50px;
+    top: 4.5rem;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -236,6 +237,7 @@ nav .nav-link{
   }
  
   .flip-card:hover .flip-card-inner {
+    -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
   }
   
@@ -244,6 +246,7 @@ nav .nav-link{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   
   .flip-card-front {
@@ -256,6 +259,7 @@ nav .nav-link{
   .flip-card-back {
     background-color:#1B2C36;
     color: white;
+    -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
     border-radius: 5px;
     transition: all 2s ease-in-out;
@@ -392,7 +396,7 @@ nav .nav-link{
     margin-left: 1rem;
 }
 
-#email a, #instagram a, #twitter a{
+#phone .info, #email a, #instagram a, #twitter a{
     text-decoration: none;
     color: #212529;
 }
